@@ -1,0 +1,258 @@
+{
+    "metadata": {
+        "configurationVersions": [3],
+        "clusterVersion": "1.192.87.20200501-000127"
+    },
+    "id": "4b9af512-b444-407a-8fe2-b4176864de22",
+    "dashboardMetadata": {
+        "name": "Marketing Source Analysis - Europe",
+        "shared": true,
+        "owner": "john.kelly@dynatrace.com",
+        "sharingDetails": {
+            "linkShared": true,
+            "published": false
+        },
+        "dashboardFilter": {
+            "timeframe": "Today"
+        },
+        "tags": ["V6", "Europe", "Marketing"]
+    },
+    "tiles": [{
+        "name": "",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 228,
+            "left": 0,
+            "width": 1672,
+            "height": 570
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": " ",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "calc:apps.web.www.angular.easytravel.com.revenue",
+                    "aggregation": "SUM",
+                    "type": "LINE",
+                    "entityType": "APPLICATION",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "aggregationRate": "TOTAL",
+                    "sortColumn": false
+                }, {
+                    "metric": "calc:apps.web.www.angular.easytravel.com.sourceineurope",
+                    "aggregation": "COUNT",
+                    "type": "BAR",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "1",
+                        "name": "web_utm_source",
+                        "values": [],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "aggregationRate": "TOTAL",
+                    "sortColumn": true
+                }],
+                "resultMetadata": {
+                    "null¦web_utm_source»bing»falsecalc:apps.web.www.angular.easytravel.com.sourceineurope|COUNT|TOTAL|BAR|APPLICATION|APPLICATION¿¿¿web_utm_sourceɵfalse": {
+                        "lastModified": 1589903248635,
+                        "customColor": "#FF0000"
+                    },
+                    "nullcalc:apps.web.www.angular.easytravel.com.revenue|SUM|TOTAL|LINE|APPLICATION|APPLICATION": {
+                        "lastModified": 1591182850909,
+                        "customColor": "#39ff14"
+                    },
+                    "null¦web_utm_source»email»falsecalc:apps.web.www.angular.easytravel.com.sourceineurope|COUNT|TOTAL|BAR|APPLICATION|APPLICATION¿¿¿web_utm_sourceɵfalse": {
+                        "lastModified": 1591210992042,
+                        "customColor": "#0000ff"
+                    },
+                    "null¦web_utm_source»instagram»falsecalc:apps.web.www.angular.easytravel.com.sourceineurope|COUNT|TOTAL|BAR|APPLICATION|APPLICATION¿¿¿web_utm_sourceɵfalse": {
+                        "lastModified": 1589903248635,
+                        "customColor": "#FFA500"
+                    },
+                    "null¦web_utm_source»facebook»falsecalc:apps.web.www.angular.easytravel.com.sourceineurope|COUNT|TOTAL|BAR|APPLICATION|APPLICATION¿¿¿web_utm_sourceɵfalse": {
+                        "lastModified": 1589985878731,
+                        "customColor": "#7c38a1"
+                    },
+                    "null¦web_utm_source»google»falsecalc:apps.web.www.angular.easytravel.com.sourceineurope|COUNT|TOTAL|BAR|APPLICATION|APPLICATION¿¿¿web_utm_sourceɵfalse": {
+                        "lastModified": 1591210980552,
+                        "customColor": "#ffff00"
+                    },
+                    "nullcalc:apps.web.www.angular.easytravel.com.ke_easytravelrevenue|SUM|TOTAL|LINE|APPLICATION|APPLICATION": {
+                        "lastModified": 1591146823332,
+                        "customColor": "#39ff14"
+                    }
+                },
+                "axisLimits": {
+                    "LEFT_MIN": 0.0
+                },
+                "leftAxisCustomUnit": "Count"
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Requests",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 0,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Europe Requests vs Revenue Over Time",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 190,
+            "left": 0,
+            "width": 532,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 76,
+            "left": 342,
+            "width": 304,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select sum(doubleProperties.revenue) as \" \" from usersession where useraction.name=\"/easytravel/rest/validate-creditcard\" and continent=\"Europe\" and stringProperties.web_utm_source IS NOT NULL",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 76,
+            "left": 0,
+            "width": 304,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select count(*) as \" \" from usersession where continent=\"Europe\" and stringProperties.web_utm_source IS NOT NULL",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 76,
+            "left": 684,
+            "width": 304,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select sum(doubleProperties.revenue) as \" \" from usersession where continent=\"Europe\" and not  useraction.name=\"/easytravel/rest/validate-creditcard\" and stringProperties.web_utm_source IS NOT NULL",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 76,
+            "left": 1026,
+            "width": 304,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select count(*) as \" \" from usersession where continent=\"Europe\" and useraction.name=\"/easytravel/rest/validate-creditcard\" and stringProperties.web_utm_source IS NOT NULL",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 76,
+            "left": 1368,
+            "width": 304,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select count(*) as \" \" from usersession where continent=\"Europe\" and not useraction.name=\"/easytravel/rest/validate-creditcard\" and stringProperties.web_utm_source IS NOT NULL",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "Revenue",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 342,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Lost Revenue",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 684,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Conversions",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1026,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Abandons",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1368,
+            "width": 190,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1558,
+            "width": 114,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## [Links ▲](#dashboard;id=0a682f60-9d0b-44ec-9ea4-5f38b51186ea)"
+    }]
+}

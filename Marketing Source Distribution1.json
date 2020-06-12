@@ -1,0 +1,508 @@
+{
+    "metadata": {
+        "configurationVersions": [3],
+        "clusterVersion": "1.192.87.20200501-000127"
+    },
+    "id": "58ec17c5-9117-4935-9ae8-0344297fa0de",
+    "dashboardMetadata": {
+        "name": "Marketing Source Distribution",
+        "shared": true,
+        "owner": "John.Kelly@dynatrace.com",
+        "sharingDetails": {
+            "linkShared": true,
+            "published": true
+        },
+        "dashboardFilter": {
+            "timeframe": "Today"
+        },
+        "tags": ["V6", "Overview", "Marketing"]
+    },
+    "tiles": [{
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 0,
+            "width": 380,
+            "height": 228
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": " ",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "calc:apps.web.www.angular.easytravel.com.sourceinasia",
+                    "aggregation": "COUNT",
+                    "type": "LINE",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "1",
+                        "name": "web_utm_source",
+                        "values": [],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "aggregationRate": "TOTAL",
+                    "sortColumn": true
+                }],
+                "resultMetadata": {
+                    "null¦web_utm_source»google»falsecalc:apps.web.www.angular.easytravel.com.sourceinasia|COUNT|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1591210941242,
+                        "customColor": "#ffff00"
+                    },
+                    "null¦web_utm_source»bing»falsecalc:apps.web.www.angular.easytravel.com.sourceinasia|COUNT|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1589903195691,
+                        "customColor": "#FF0000"
+                    },
+                    "null¦web_utm_source»email»falsecalc:apps.web.www.angular.easytravel.com.sourceinasia|COUNT|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1591210928163,
+                        "customColor": "#0000ff"
+                    },
+                    "null¦web_utm_source»instagram»falsecalc:apps.web.www.angular.easytravel.com.sourceinasia|COUNT|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1589985843081,
+                        "customColor": "#FFA500"
+                    },
+                    "null¦web_utm_source»facebook»falsecalc:apps.web.www.angular.easytravel.com.sourceinasia|COUNT|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1589985843081,
+                        "customColor": "#7c38a1"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 418,
+            "width": 380,
+            "height": 228
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": " ",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "calc:apps.web.www.angular.easytravel.com.sourceineurope",
+                    "aggregation": "COUNT",
+                    "type": "LINE",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "1",
+                        "name": "web_utm_source",
+                        "values": [],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "aggregationRate": "TOTAL",
+                    "sortColumn": true
+                }],
+                "resultMetadata": {
+                    "null¦web_utm_source»instagram»falsecalc:apps.web.www.angular.easytravel.com.sourceineurope|COUNT|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1589985843081,
+                        "customColor": "#FFA500"
+                    },
+                    "null¦web_utm_source»facebook»falsecalc:apps.web.www.angular.easytravel.com.sourceineurope|COUNT|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1589985843081,
+                        "customColor": "#7c38a1"
+                    },
+                    "null¦web_utm_source»bing»falsecalc:apps.web.www.angular.easytravel.com.sourceineurope|COUNT|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1589903195691,
+                        "customColor": "#FF0000"
+                    },
+                    "null¦web_utm_source»google»falsecalc:apps.web.www.angular.easytravel.com.sourceineurope|COUNT|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1591210941242,
+                        "customColor": "#ffff00"
+                    },
+                    "null¦web_utm_source»email»falsecalc:apps.web.www.angular.easytravel.com.sourceineurope|COUNT|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1591210928163,
+                        "customColor": "#0000ff"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 836,
+            "width": 380,
+            "height": 228
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": " ",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "calc:apps.web.www.angular.easytravel.com.sourceinnorthamerica",
+                    "aggregation": "COUNT",
+                    "type": "LINE",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "1",
+                        "name": "web_utm_source",
+                        "values": [],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "aggregationRate": "TOTAL",
+                    "sortColumn": true
+                }],
+                "resultMetadata": {
+                    "null¦web_utm_source»instagram»falsecalc:apps.web.www.angular.easytravel.com.sourceinnorthamerica|COUNT|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1589985843081,
+                        "customColor": "#FFA500"
+                    },
+                    "null¦web_utm_source»google»falsecalc:apps.web.www.angular.easytravel.com.sourceinnorthamerica|COUNT|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1591210941242,
+                        "customColor": "#ffff00"
+                    },
+                    "null¦web_utm_source»bing»falsecalc:apps.web.www.angular.easytravel.com.sourceinnorthamerica|COUNT|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1589903195691,
+                        "customColor": "#FF0000"
+                    },
+                    "null¦web_utm_source»facebook»falsecalc:apps.web.www.angular.easytravel.com.sourceinnorthamerica|COUNT|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1589985843081,
+                        "customColor": "#7c38a1"
+                    },
+                    "null¦web_utm_source»email»falsecalc:apps.web.www.angular.easytravel.com.sourceinnorthamerica|COUNT|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1591210928163,
+                        "customColor": "#0000ff"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1254,
+            "width": 380,
+            "height": 228
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": " ",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "calc:apps.web.www.angular.easytravel.com.sourceinsouthamerica",
+                    "aggregation": "COUNT",
+                    "type": "LINE",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "1",
+                        "name": "web_utm_source",
+                        "values": [],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "aggregationRate": "TOTAL",
+                    "sortColumn": true
+                }],
+                "resultMetadata": {
+                    "null¦web_utm_source»email»falsecalc:apps.web.www.angular.easytravel.com.sourceinsouthamerica|COUNT|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1591210928163,
+                        "customColor": "#0000ff"
+                    },
+                    "null¦web_utm_source»google»falsecalc:apps.web.www.angular.easytravel.com.sourceinsouthamerica|COUNT|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1591210941242,
+                        "customColor": "#ffff00"
+                    },
+                    "null¦web_utm_source»bing»falsecalc:apps.web.www.angular.easytravel.com.sourceinsouthamerica|COUNT|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1589903195691,
+                        "customColor": "#FF0000"
+                    },
+                    "null¦web_utm_source»facebook»falsecalc:apps.web.www.angular.easytravel.com.sourceinsouthamerica|COUNT|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1589985843081,
+                        "customColor": "#7c38a1"
+                    },
+                    "null¦web_utm_source»instagram»falsecalc:apps.web.www.angular.easytravel.com.sourceinsouthamerica|COUNT|TOTAL|LINE|APPLICATION": {
+                        "lastModified": 1589985843081,
+                        "customColor": "#FFA500"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 456,
+            "left": 0,
+            "width": 1634,
+            "height": 342
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": " ",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "calc:apps.web.www.angular.easytravel.com.source",
+                    "aggregation": "COUNT",
+                    "type": "BAR",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "1",
+                        "name": "web_utm_source",
+                        "values": [],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "aggregationRate": "TOTAL",
+                    "sortColumn": true
+                }, {
+                    "metric": "calc:apps.web.www.angular.easytravel.com.revenue",
+                    "aggregation": "SUM",
+                    "type": "LINE",
+                    "entityType": "APPLICATION",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "aggregationRate": "TOTAL",
+                    "sortColumn": false
+                }],
+                "resultMetadata": {
+                    "null¦web_utm_source»bing»falsecalc:apps.web.www.angular.easytravel.com.source|COUNT|TOTAL|BAR|APPLICATION|APPLICATION¿¿¿web_utm_sourceɵfalse": {
+                        "lastModified": 1589903248635,
+                        "customColor": "#FF0000"
+                    },
+                    "null¦web_utm_source»email»falsecalc:apps.web.www.angular.easytravel.com.source|COUNT|TOTAL|BAR|APPLICATION|APPLICATION¿¿¿web_utm_sourceɵfalse": {
+                        "lastModified": 1591210992042,
+                        "customColor": "#0000ff"
+                    },
+                    "nullcalc:apps.web.www.angular.easytravel.com.revenue|SUM|TOTAL|LINE|APPLICATION|APPLICATION": {
+                        "lastModified": 1591182850909,
+                        "customColor": "#39ff14"
+                    },
+                    "null¦web_utm_source»facebook»falsecalc:apps.web.www.angular.easytravel.com.source|COUNT|TOTAL|BAR|APPLICATION|APPLICATION¿¿¿web_utm_sourceɵfalse": {
+                        "lastModified": 1589985878731,
+                        "customColor": "#7c38a1"
+                    },
+                    "null¦web_utm_source»google»falsecalc:apps.web.www.angular.easytravel.com.source|COUNT|TOTAL|BAR|APPLICATION|APPLICATION¿¿¿web_utm_sourceɵfalse": {
+                        "lastModified": 1591210980552,
+                        "customColor": "#ffff00"
+                    },
+                    "null¦web_utm_source»instagram»falsecalc:apps.web.www.angular.easytravel.com.source|COUNT|TOTAL|BAR|APPLICATION|APPLICATION¿¿¿web_utm_sourceɵfalse": {
+                        "lastModified": 1589903248635,
+                        "customColor": "#FFA500"
+                    },
+                    "nullcalc:apps.web.www.angular.easytravel.com.ke_easytravelrevenue|SUM|TOTAL|LINE|APPLICATION|APPLICATION": {
+                        "lastModified": 1591146823332,
+                        "customColor": "#39ff14"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 418,
+            "left": 0,
+            "width": 380,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## Sources Over Time"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 0,
+            "width": 380,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## Asia Sources"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1254,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## South America Sources"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 418,
+            "width": 380,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## Europe Sources"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 836,
+            "width": 380,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## North America Sources"
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 304,
+            "left": 0,
+            "width": 380,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select sum(doubleProperties.revenue) as \" \" FROM usersession where continent=\"Asia\" and useraction.name=\"/easytravel/rest/validate-creditcard\" and stringProperties.web_utm_source IS NOT NULL",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 304,
+            "left": 418,
+            "width": 380,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select sum(doubleProperties.revenue) as \" \" FROM usersession where continent=\"Europe\" and useraction.name=\"/easytravel/rest/validate-creditcard\" and stringProperties.web_utm_source IS NOT NULL",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 304,
+            "left": 836,
+            "width": 380,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select sum(doubleProperties.revenue) as \" \" FROM usersession where continent=\"North America\" and useraction.name=\"/easytravel/rest/validate-creditcard\" and stringProperties.web_utm_source IS NOT NULL",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 304,
+            "left": 1254,
+            "width": 380,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select sum(doubleProperties.revenue) as \" \" FROM usersession where continent=\"South America\" and useraction.name=\"/easytravel/rest/validate-creditcard\" and stringProperties.web_utm_source IS NOT NULL",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1558,
+            "width": 114,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## [Links ▲](#dashboard;id=c278b24c-2b91-49f4-8f66-bcf7d526f674)"
+    }, {
+        "name": "Asia Revenue",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 266,
+            "left": 0,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Europe Revenue",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 266,
+            "left": 418,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "North America Revenue",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 266,
+            "left": 836,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "South America Revenue",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 266,
+            "left": 1254,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }]
+}
