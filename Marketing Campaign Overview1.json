@@ -100,7 +100,19 @@
                     "aggregationRate": "TOTAL",
                     "sortColumn": true
                 }],
-                "resultMetadata": {}
+                "resultMetadata": {
+                    "null¦web_utm_source»facebook»falsecalc:apps.web.easytravel.source|COUNT|TOTAL|BAR|APPLICATION": {
+                        "lastModified": 1589985843081,
+                        "customColor": "#7c38a1"
+                    },
+                    "null¦web_utm_source»bing»falsecalc:apps.web.easytravel.source|COUNT|TOTAL|BAR|APPLICATION": {
+                        "lastModified": 1589903195691,
+                        "customColor": "#FF0000"
+                    },
+                    "null¦web_utm_source»google»falsecalc:apps.web.easytravel.source|COUNT|TOTAL|BAR|APPLICATION": {
+                        "lastModified": 1589903115274,
+                        "customColor": "#0000FF"
+                    }
                 }
             },
             "filtersPerEntityType": {}
