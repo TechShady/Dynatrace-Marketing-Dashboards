@@ -64,7 +64,7 @@
                         "lastModified": 1591285527997,
                         "customColor": "#39ff14"
                     },
-                    "null¦web_utm_campaign»special_offers»false${Campaign.id}|COUNT|TOTAL|BAR|APPLICATION|APPLICATION¿¿¿web_utm_campaignɵfalse": {
+                    "null¦web_utm_campaign»special_offer»false${Campaign.id}|COUNT|TOTAL|BAR|APPLICATION|APPLICATION¿¿¿web_utm_campaignɵfalse": {
                         "lastModified": 1591285491053,
                         "customColor": "#F001FF"
                     },
@@ -114,17 +114,13 @@
                     "sortColumn": true
                 }],
                 "resultMetadata": {
-                    "null¦web_utm_source»facebook»falsecalc:apps.web.easytravel.source|COUNT|TOTAL|BAR|APPLICATION": {
-                        "lastModified": 1589985843081,
-                        "customColor": "#7c38a1"
+                    "null¦web_utm_campaign»special_offer»false${Campaign.id}|COUNT|TOTAL|BAR|APPLICATION|APPLICATION¿¿¿web_utm_campaignɵfalse": {
+                        "lastModified": 1591285491053,
+                        "customColor": "#F001FF"
                     },
-                    "null¦web_utm_source»bing»falsecalc:apps.web.easytravel.source|COUNT|TOTAL|BAR|APPLICATION": {
-                        "lastModified": 1589903195691,
-                        "customColor": "#FF0000"
-                    },
-                    "null¦web_utm_source»google»falsecalc:apps.web.easytravel.source|COUNT|TOTAL|BAR|APPLICATION": {
-                        "lastModified": 1589903115274,
-                        "customColor": "#0000FF"
+                    "null¦web_utm_campaign»spring_sale»false${Campaign.id}|COUNT|TOTAL|BAR|APPLICATION|APPLICATION¿¿¿web_utm_campaignɵfalse": {
+                        "lastModified": 1591285481963,
+                        "customColor": "#1D1CFF"
                     }
                 }
             },
