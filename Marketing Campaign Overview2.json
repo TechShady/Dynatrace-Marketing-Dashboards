@@ -193,7 +193,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select sum(${uspRevenue.id}) as \" \" FROM usersession where stringProperties.web_utm_source IS NOT NULL and useraction.name=\"/easytravel/rest/validate-creditcard\"",
+        "query": "select sum(${uspRevenue.id}) as \" \" FROM usersession where stringProperties.web_utm_source IS NOT NULL and useraction.name=\"${MyLastStep}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -209,7 +209,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select sum(${uspRevenue.id}) as \" \" FROM usersession where stringProperties.web_utm_source IS NOT NULL and useraction.name=\"/easytravel/rest/validate-creditcard\" and userExperienceScore is not \"SATISFIED\"",
+        "query": "select sum(${uspRevenue.id}) as \" \" FROM usersession where stringProperties.web_utm_source IS NOT NULL and useraction.name=\"${MyLastStep}\" and userExperienceScore is not \"SATISFIED\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -225,7 +225,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select sum(${uspRevenue.id}) as \" \" FROM usersession where stringProperties.web_utm_source IS NOT NULL and not useraction.name=\"/easytravel/rest/validate-creditcard\"",
+        "query": "select sum(${uspRevenue.id}) as \" \" FROM usersession where stringProperties.web_utm_source IS NOT NULL and not useraction.name=\"${MyLastStep}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -241,7 +241,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select avg(${uspRevenue.id}) as \" \" FROM usersession where stringProperties.web_utm_source IS NOT NULL and useraction.name=\"/easytravel/rest/validate-creditcard\"",
+        "query": "select avg(${uspRevenue.id}) as \" \" FROM usersession where stringProperties.web_utm_source IS NOT NULL and useraction.name=\"${MyLastStep}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -257,7 +257,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select count(*) as \" \" from usersession where stringProperties.web_utm_source is not null and useraction.name=\"/easytravel/rest/validate-creditcard\"",
+        "query": "select count(*) as \" \" from usersession where stringProperties.web_utm_source is not null and useraction.name=\"${MyLastStep}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -273,7 +273,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select count(*) as \" \" from usersession where stringProperties.web_utm_source is not null and not useraction.name=\"/easytravel/rest/validate-creditcard\"",
+        "query": "select count(*) as \" \" from usersession where stringProperties.web_utm_source is not null and not useraction.name=\"${MyLastStep}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
