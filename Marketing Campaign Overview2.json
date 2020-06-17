@@ -5,7 +5,7 @@
     },
     "id": "a61deee7-8446-4d58-b9ec-623f368e121b",
     "dashboardMetadata": {
-        "name": "Marketing Campaign Overview",
+        "name": "${overviewName} Marketing Campaign Overview",
         "shared": true,
         "owner": "john.kelly@dynatrace.com",
         "sharingDetails": {
@@ -50,7 +50,7 @@
                     "aggregationRate": "TOTAL",
                     "sortColumn": true
                 }, {
-                    "metric": "calc:apps.web.www.angular.easytravel.com.revenue",
+                    "metric": "${Revenue.id}",
                     "aggregation": "SUM",
                     "type": "LINE",
                     "entityType": "APPLICATION",
@@ -64,7 +64,7 @@
                         "lastModified": 1591130432950,
                         "customColor": "#008cdb"
                     },
-                    "nullcalc:apps.web.www.angular.easytravel.com.revenue|SUM|TOTAL|LINE|APPLICATION|APPLICATION": {
+                    "null${Revenue.id}|SUM|TOTAL|LINE|APPLICATION|APPLICATION": {
                         "lastModified": 1591285527997,
                         "customColor": "#39ff14"
                     },
@@ -93,9 +93,9 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 76,
+            "top": 152,
             "left": 1520,
-            "width": 152,
+            "width": 190,
             "height": 38
         },
         "tileFilter": {},
@@ -105,9 +105,9 @@
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 152,
+            "top": 228,
             "left": 1520,
-            "width": 152,
+            "width": 190,
             "height": 38
         },
         "tileFilter": {},
@@ -193,7 +193,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select sum(doubleProperties.revenue) as \" \" FROM usersession where stringProperties.web_utm_source IS NOT NULL and useraction.name=\"/easytravel/rest/validate-creditcard\"",
+        "query": "select sum(${uspRevenue.id}) as \" \" FROM usersession where stringProperties.web_utm_source IS NOT NULL and useraction.name=\"/easytravel/rest/validate-creditcard\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -209,7 +209,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select sum(doubleProperties.revenue) as \" \" FROM usersession where stringProperties.web_utm_source IS NOT NULL and useraction.name=\"/easytravel/rest/validate-creditcard\" and userExperienceScore is not \"SATISFIED\"",
+        "query": "select sum(${uspRevenue.id}) as \" \" FROM usersession where stringProperties.web_utm_source IS NOT NULL and useraction.name=\"/easytravel/rest/validate-creditcard\" and userExperienceScore is not \"SATISFIED\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -225,7 +225,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select sum(doubleProperties.revenue) as \" \" FROM usersession where stringProperties.web_utm_source IS NOT NULL and not useraction.name=\"/easytravel/rest/validate-creditcard\"",
+        "query": "select sum(${uspRevenue.id}) as \" \" FROM usersession where stringProperties.web_utm_source IS NOT NULL and not useraction.name=\"/easytravel/rest/validate-creditcard\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -241,7 +241,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select avg(doubleProperties.revenue) as \" \" FROM usersession where stringProperties.web_utm_source IS NOT NULL and useraction.name=\"/easytravel/rest/validate-creditcard\"",
+        "query": "select avg(${uspRevenue.id}) as \" \" FROM usersession where stringProperties.web_utm_source IS NOT NULL and useraction.name=\"/easytravel/rest/validate-creditcard\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -311,7 +311,7 @@
                     "sortColumn": true
                 }],
                 "resultMetadata": {
-                    "APPLICATION-008569CDB300AE03¦APPLICATION»APPLICATION-008569CDB300AE03»true¦Apdex category»TOLERATING»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|LINE|APPLICATION": {
+                    "${app.id}¦APPLICATION»${app.id}»true¦Apdex category»TOLERATING»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|LINE|APPLICATION": {
                         "lastModified": 1591286718290,
                         "customColor": "#ffe11c"
                     },
@@ -327,11 +327,11 @@
                         "lastModified": 1591286873257,
                         "customColor": "#ffe11c"
                     },
-                    "APPLICATION-008569CDB300AE03¦APPLICATION»APPLICATION-008569CDB300AE03»true¦Apdex category»SATISFIED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|LINE|APPLICATION": {
+                    "${app.id}¦APPLICATION»${app.id}»true¦Apdex category»SATISFIED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|LINE|APPLICATION": {
                         "lastModified": 1591286726669,
                         "customColor": "#39ff14"
                     },
-                    "APPLICATION-008569CDB300AE03¦APPLICATION»APPLICATION-008569CDB300AE03»true¦Apdex category»FRUSTRATED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|LINE|APPLICATION": {
+                    "${app.id}¦APPLICATION»${app.id}»true¦Apdex category»FRUSTRATED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|LINE|APPLICATION": {
                         "lastModified": 1591286707858,
                         "customColor": "#FF1C1C"
                     }
@@ -339,7 +339,7 @@
             },
             "filtersPerEntityType": {
                 "APPLICATION": {
-                    "SPECIFIC_ENTITIES": ["APPLICATION-008569CDB300AE03"]
+                    "SPECIFIC_ENTITIES": ["${app.id}"]
                 }
             }
         }
@@ -431,5 +431,17 @@
             "height": 38
         },
         "tileFilter": {}
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 76,
+            "left": 1520,
+            "width": 190,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## [Geo Breakdown](#dashboard;id=934e67dd-9d84-4f57-a219-6a0d8f7ca2af)"
     }]
 }

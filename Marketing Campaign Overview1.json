@@ -5,7 +5,7 @@
     },
     "id": "1ecc030d-ef73-4fda-985d-225a9219b560",
     "dashboardMetadata": {
-        "name": "Marketing Campaign Overview",
+        "name": "${overviewName} Marketing Campaign Overview",
         "shared": true,
         "owner": "john.kelly@dynatrace.com",
         "sharingDetails": {
@@ -36,7 +36,7 @@
                 "legendShown": true,
                 "type": "TIMESERIES",
                 "series": [{
-                    "metric": "calc:apps.web.www.angular.easytravel.com.campaign",
+                    "metric": "${Campaign.id}",
                     "aggregation": "COUNT",
                     "type": "BAR",
                     "entityType": "APPLICATION",
@@ -50,7 +50,7 @@
                     "aggregationRate": "TOTAL",
                     "sortColumn": true
                 }, {
-                    "metric": "calc:apps.web.www.angular.easytravel.com.revenue",
+                    "metric": "${Revenue.id}",
                     "aggregation": "SUM",
                     "type": "LINE",
                     "entityType": "APPLICATION",
@@ -59,36 +59,7 @@
                     "aggregationRate": "TOTAL",
                     "sortColumn": false
                 }],
-                "resultMetadata": {
-                    "null¦web_utm_campaign»spring_sale»falsecalc:apps.web.www.angular.easytravel.com.campaign|SUM|TOTAL|BAR|APPLICATION|APPLICATION¿¿¿web_utm_campaignɵfalse": {
-                        "lastModified": 1591130432950,
-                        "customColor": "#008cdb"
-                    },
-                    "nullcalc:apps.web.www.angular.easytravel.com.revenue|SUM|TOTAL|LINE|APPLICATION|APPLICATION": {
-                        "lastModified": 1591285292741,
-                        "customColor": "#39ff14"
-                    },
-                    "null¦web_utm_campaign»special_offers»falsecalc:apps.web.www.angular.easytravel.com.campaign|SUM|TOTAL|BAR|APPLICATION|APPLICATION¿¿¿web_utm_campaignɵfalse": {
-                        "lastModified": 1591130429623,
-                        "customColor": "#ef651f"
-                    },
-                    "null¦web_utm_campaign»spring_sale»falsecalc:apps.web.www.angular.easytravel.com.campaign|COUNT|TOTAL|BAR|APPLICATION": {
-                        "lastModified": 1591285203310,
-                        "customColor": "#1D1CFF"
-                    },
-                    "null¦web_utm_campaign»special_offers»falsecalc:apps.web.www.angular.easytravel.com.campaign|COUNT|TOTAL|BAR|APPLICATION|APPLICATION¿¿¿web_utm_campaignɵfalse": {
-                        "lastModified": 1591285152627,
-                        "customColor": "#F001FF"
-                    },
-                    "null¦web_utm_campaign»spring_sale»falsecalc:apps.web.www.angular.easytravel.com.campaign|COUNT|TOTAL|BAR|APPLICATION|APPLICATION¿¿¿web_utm_campaignɵfalse": {
-                        "lastModified": 1591285166130,
-                        "customColor": "#1D1CFF"
-                    },
-                    "null¦web_utm_campaign»special_offers»falsecalc:apps.web.www.angular.easytravel.com.campaign|COUNT|TOTAL|BAR|APPLICATION": {
-                        "lastModified": 1591285215801,
-                        "customColor": "#F001FF"
-                    }
-                },
+                "resultMetadata": {},
                 "axisLimits": {
                     "LEFT_MIN": 0.0
                 },
@@ -115,7 +86,7 @@
                 "legendShown": true,
                 "type": "TOP_LIST",
                 "series": [{
-                    "metric": "calc:apps.web.www.angular.easytravel.com.campaign",
+                    "metric": "${Campaign.id}",
                     "aggregation": "COUNT",
                     "type": "LINE",
                     "entityType": "APPLICATION",
@@ -129,15 +100,7 @@
                     "aggregationRate": "TOTAL",
                     "sortColumn": true
                 }],
-                "resultMetadata": {
-                    "null¦web_utm_campaign»spring_sale»falsecalc:apps.web.www.angular.easytravel.com.campaign|COUNT|TOTAL|LINE|APPLICATION": {
-                        "lastModified": 1591284909515,
-                        "customColor": "#1d1cff"
-                    },
-                    "null¦web_utm_campaign»special_offers»falsecalc:apps.web.www.angular.easytravel.com.campaign|COUNT|TOTAL|LINE|APPLICATION": {
-                        "lastModified": 1591285012569,
-                        "customColor": "#f001ff"
-                    }
+                "resultMetadata": {}
                 }
             },
             "filtersPerEntityType": {}
@@ -177,7 +140,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select sum(doubleProperties.revenue) as \" \" FROM usersession where stringProperties.web_utm_source IS NOT NULL and not useraction.name=\"/easytravel/rest/validate-creditcard\"",
+        "query": "select sum(${uspRevenue.id}) as \" \" FROM usersession where stringProperties.web_utm_source IS NOT NULL and not useraction.name=\"/easytravel/rest/validate-creditcard\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -193,7 +156,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select sum(doubleProperties.revenue) as \" \" FROM usersession where stringProperties.web_utm_source IS NOT NULL and useraction.name=\"/easytravel/rest/validate-creditcard\" and userExperienceScore is not \"SATISFIED\"",
+        "query": "select sum(${uspRevenue.id}) as \" \" FROM usersession where stringProperties.web_utm_source IS NOT NULL and useraction.name=\"/easytravel/rest/validate-creditcard\" and userExperienceScore is not \"SATISFIED\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -209,7 +172,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select avg(doubleProperties.revenue) as \" \" FROM usersession where stringProperties.web_utm_source IS NOT NULL and useraction.name=\"/easytravel/rest/validate-creditcard\"",
+        "query": "select avg(${uspRevenue.id}) as \" \" FROM usersession where stringProperties.web_utm_source IS NOT NULL and useraction.name=\"/easytravel/rest/validate-creditcard\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -257,7 +220,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select sum(doubleProperties.revenue) as \" \" FROM usersession where stringProperties.web_utm_source IS NOT NULL and useraction.name=\"/easytravel/rest/validate-creditcard\"",
+        "query": "select sum(${uspRevenue.id}) as \" \" FROM usersession where stringProperties.web_utm_source IS NOT NULL and useraction.name=\"/easytravel/rest/validate-creditcard\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -295,7 +258,7 @@
                     "sortColumn": true
                 }],
                 "resultMetadata": {
-                    "APPLICATION-008569CDB300AE03¦APPLICATION»APPLICATION-008569CDB300AE03»true¦Apdex category»TOLERATING»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|LINE|APPLICATION": {
+                    "${app.id}¦APPLICATION»${app.id}»true¦Apdex category»TOLERATING»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|LINE|APPLICATION": {
                         "lastModified": 1591286574544,
                         "customColor": "#ffe11c"
                     },
@@ -311,11 +274,11 @@
                         "lastModified": 1591286955588,
                         "customColor": "#ffe11c"
                     },
-                    "APPLICATION-008569CDB300AE03¦APPLICATION»APPLICATION-008569CDB300AE03»true¦Apdex category»SATISFIED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|LINE|APPLICATION": {
+                    "${app.id}¦APPLICATION»${app.id}»true¦Apdex category»SATISFIED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|LINE|APPLICATION": {
                         "lastModified": 1591286562245,
                         "customColor": "#39ff14"
                     },
-                    "APPLICATION-008569CDB300AE03¦APPLICATION»APPLICATION-008569CDB300AE03»true¦Apdex category»FRUSTRATED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|LINE|APPLICATION": {
+                    "${app.id}¦APPLICATION»${app.id}»true¦Apdex category»FRUSTRATED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|LINE|APPLICATION": {
                         "lastModified": 1591286585223,
                         "customColor": "#FF1C1C"
                     }
@@ -323,7 +286,7 @@
             },
             "filtersPerEntityType": {
                 "APPLICATION": {
-                    "SPECIFIC_ENTITIES": ["APPLICATION-008569CDB300AE03"]
+                    "SPECIFIC_ENTITIES": ["${app.id}"]
                 }
             }
         }
