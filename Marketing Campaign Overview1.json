@@ -59,7 +59,20 @@
                     "aggregationRate": "TOTAL",
                     "sortColumn": false
                 }],
-                "resultMetadata": {},
+                "resultMetadata": {
+                    "null${Revenue.id}|SUM|TOTAL|LINE|APPLICATION|APPLICATION": {
+                        "lastModified": 1591285527997,
+                        "customColor": "#39ff14"
+                    },
+                    "null¦web_utm_campaign»special_offers»false${Campaign.id}|COUNT|TOTAL|BAR|APPLICATION|APPLICATION¿¿¿web_utm_campaignɵfalse": {
+                        "lastModified": 1591285491053,
+                        "customColor": "#F001FF"
+                    },
+                    "null¦web_utm_campaign»spring_sale»false${Campaign.id}|COUNT|TOTAL|BAR|APPLICATION|APPLICATION¿¿¿web_utm_campaignɵfalse": {
+                        "lastModified": 1591285481963,
+                        "customColor": "#1D1CFF"
+                    }
+					},
                 "axisLimits": {
                     "LEFT_MIN": 0.0
                 },
