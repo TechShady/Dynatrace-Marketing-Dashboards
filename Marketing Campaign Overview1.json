@@ -225,7 +225,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select count(*) as \" s\" from usersession where stringProperties.web_utm_source is not null and not useraction.name=\"${MyLastStep}\"",
+        "query": "select count(*) as \" \" from usersession where stringProperties.web_utm_source is not null and not useraction.name=\"${MyLastStep}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
