@@ -193,7 +193,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select sum(${uspRevenue.id}) as \" \" FROM usersession where stringProperties.${uspCampaign.name} IS NOT NULL and not useraction.name=\"${MyLastStep}\"",
+        "query": "select sum(${uspRevenue.id}) as \" \" FROM usersession where stringProperties.${uspCampaign.name} IS NOT NULL and not useraction.name=\"${kuaLastStep}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -241,7 +241,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select count(*) as \" \" from usersession where stringProperties.${uspCampaign.name} is not null and not useraction.name=\"${MyLastStep}\"",
+        "query": "select count(*) as \" \" from usersession where stringProperties.${uspCampaign.name} is not null and not useraction.name=\"${kuaLastStep}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
