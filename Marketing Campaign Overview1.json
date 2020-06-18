@@ -42,7 +42,7 @@
                     "entityType": "APPLICATION",
                     "dimensions": [{
                         "id": "1",
-                        "name": "web_utm_campaign",
+                        "name": "${uspCampaign.name}",
                         "values": [],
                         "entityDimension": false
                     }],
@@ -64,11 +64,11 @@
                         "lastModified": 1591285527997,
                         "customColor": "#39ff14"
                     },
-                    "null¦web_utm_campaign»special_offer»false${Campaign.id}|COUNT|TOTAL|BAR|APPLICATION|APPLICATION¿¿¿web_utm_campaignɵfalse": {
+                    "null¦${uspCampaign.name}»special_offer»false${Campaign.id}|COUNT|TOTAL|BAR|APPLICATION|APPLICATION¿¿¿${uspCampaign.name}ɵfalse": {
                         "lastModified": 1591285491053,
                         "customColor": "#F001FF"
                     },
-                    "null¦web_utm_campaign»spring_sale»false${Campaign.id}|COUNT|TOTAL|BAR|APPLICATION|APPLICATION¿¿¿web_utm_campaignɵfalse": {
+                    "null¦${uspCampaign.name}»spring_sale»false${Campaign.id}|COUNT|TOTAL|BAR|APPLICATION|APPLICATION¿¿¿${uspCampaign.name}ɵfalse": {
                         "lastModified": 1591285481963,
                         "customColor": "#1D1CFF"
                     }
@@ -105,7 +105,7 @@
                     "entityType": "APPLICATION",
                     "dimensions": [{
                         "id": "1",
-                        "name": "web_utm_campaign",
+                        "name": "${uspCampaign.name}",
                         "values": [],
                         "entityDimension": false
                     }],
@@ -114,11 +114,11 @@
                     "sortColumn": true
                 }],
                 "resultMetadata": {
-                    "null¦web_utm_campaign»spring_sale»false${Campaign.id}|COUNT|TOTAL|LINE|APPLICATION": {
+                    "null¦${uspCampaign.name}»spring_sale»false${Campaign.id}|COUNT|TOTAL|LINE|APPLICATION": {
                         "lastModified": 1591285345015,
                         "customColor": "#1D1CFF"
                     },
-                    "null¦web_utm_campaign»special_offer»false${Campaign.id}|COUNT|TOTAL|LINE|APPLICATION": {
+                    "null¦${uspCampaign.name}»special_offer»false${Campaign.id}|COUNT|TOTAL|LINE|APPLICATION": {
                         "lastModified": 1591285354605,
                         "customColor": "#F001FF"
                     }
@@ -127,7 +127,7 @@
             "filtersPerEntityType": {}
         }
     }, {
-        "name": "Campaign Requests",
+        "name": "Campaign Responses",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
@@ -161,7 +161,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select sum(${uspRevenue.id}) as \" \" FROM usersession where stringProperties.web_utm_source IS NOT NULL and not useraction.name=\"${MyLastStep}\"",
+        "query": "select sum(${uspRevenue.id}) as \" \" FROM usersession where stringProperties.${uspCampaign.name} IS NOT NULL and not useraction.name=\"${MyLastStep}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -177,7 +177,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select sum(${uspRevenue.id}) as \" \" FROM usersession where stringProperties.web_utm_source IS NOT NULL and useraction.name=\"${MyLastStep}\" and userExperienceScore is not \"SATISFIED\"",
+        "query": "select sum(${uspRevenue.id}) as \" \" FROM usersession where stringProperties.${uspCampaign.name} IS NOT NULL and useraction.name=\"${MyLastStep}\" and userExperienceScore is not \"SATISFIED\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -193,7 +193,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select avg(${uspRevenue.id}) as \" \" FROM usersession where stringProperties.web_utm_source IS NOT NULL and useraction.name=\"${MyLastStep}\"",
+        "query": "select avg(${uspRevenue.id}) as \" \" FROM usersession where stringProperties.${uspCampaign.name} IS NOT NULL and useraction.name=\"${MyLastStep}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -209,7 +209,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select count(*) as \" \" from usersession where stringProperties.web_utm_source is not null and useraction.name=\"${MyLastStep}\"",
+        "query": "select count(*) as \" \" from usersession where stringProperties.${uspCampaign.name} is not null and useraction.name=\"${MyLastStep}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -225,7 +225,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select count(*) as \" \" from usersession where stringProperties.web_utm_source is not null and not useraction.name=\"${MyLastStep}\"",
+        "query": "select count(*) as \" \" from usersession where stringProperties.${uspCampaign.name} is not null and not useraction.name=\"${MyLastStep}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -241,7 +241,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select sum(${uspRevenue.id}) as \" \" FROM usersession where stringProperties.web_utm_source IS NOT NULL and useraction.name=\"${MyLastStep}\"",
+        "query": "select sum(${uspRevenue.id}) as \" \" FROM usersession where stringProperties.${uspCampaign.name} IS NOT NULL and useraction.name=\"${MyLastStep}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -389,7 +389,7 @@
         },
         "tileFilter": {}
     }, {
-        "name": "Campaign Requests vs Revenue Over Time",
+        "name": "Campaign Responses vs Revenue Over Time",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
