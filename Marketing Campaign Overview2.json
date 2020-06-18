@@ -161,7 +161,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select sum(${uspRevenue.id}) as \" \" FROM usersession where stringProperties.${uspCampaign.name} IS NOT NULL and useraction.name=\"${MyLastStep}\"",
+        "query": "select sum(${uspRevenue.id}) as \" \" FROM usersession where stringProperties.${uspCampaign.name} IS NOT NULL ${kuaLastStep}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -177,7 +177,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select sum(${uspRevenue.id}) as \" \" FROM usersession where stringProperties.${uspCampaign.name} IS NOT NULL and useraction.name=\"${MyLastStep}\" and userExperienceScore is not \"SATISFIED\"",
+        "query": "select sum(${uspRevenue.id}) as \" \" FROM usersession where stringProperties.${uspCampaign.name} IS NOT NULL ${kuaLastStep} and userExperienceScore is not \"SATISFIED\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -209,7 +209,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select avg(${uspRevenue.id}) as \" \" FROM usersession where stringProperties.${uspCampaign.name} IS NOT NULL and useraction.name=\"${MyLastStep}\"",
+        "query": "select avg(${uspRevenue.id}) as \" \" FROM usersession where stringProperties.${uspCampaign.name} IS NOT NULL ${kuaLastStep}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -225,7 +225,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select count(*) as \" \" from usersession where stringProperties.${uspCampaign.name} is not null and useraction.name=\"${MyLastStep}\"",
+        "query": "select count(*) as \" \" from usersession where stringProperties.${uspCampaign.name} is not null ${kuaLastStep}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
