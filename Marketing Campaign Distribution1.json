@@ -5,7 +5,7 @@
     },
     "id": "934e67dd-9d84-4f57-a219-6a0d8f7ca2af",
     "dashboardMetadata": {
-        "name": "Marketing Campaign Distribution",
+        "name": "${overviewName} Marketing Campaign Distribution",
         "shared": true,
         "owner": "john.kelly@dynatrace.com",
         "sharingDetails": {
@@ -36,7 +36,7 @@
                 "legendShown": true,
                 "type": "TOP_LIST",
                 "series": [{
-                    "metric": "calc:apps.web.www.angular.easytravel.com.campaignsinasia",
+                    "metric": "${CampaignD1.id}",
                     "aggregation": "COUNT",
                     "type": "LINE",
                     "entityType": "APPLICATION",
@@ -348,7 +348,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select sum(doubleProperties.revenue) as \" \" FROM usersession where continent=\"Asia\" and useraction.name=\"/easytravel/rest/validate-creditcard\" and stringProperties.web_utm_source IS NOT NULL",
+        "query": "select sum(doubleProperties.revenue) as \" \" FROM usersession where continent=\"Asia\" and useraction.name=\"${kuaLastStep}\" and stringProperties.web_utm_source IS NOT NULL",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -364,7 +364,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select sum(doubleProperties.revenue) as \" \" FROM usersession where continent=\"Europe\" and useraction.name=\"/easytravel/rest/validate-creditcard\" and stringProperties.web_utm_source IS NOT NULL",
+        "query": "select sum(doubleProperties.revenue) as \" \" FROM usersession where continent=\"Europe\" and useraction.name=\"${kuaLastStep}\" and stringProperties.web_utm_source IS NOT NULL",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -380,7 +380,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select sum(doubleProperties.revenue) as \" \" FROM usersession where continent=\"North America\" and useraction.name=\"/easytravel/rest/validate-creditcard\" and stringProperties.web_utm_source IS NOT NULL",
+        "query": "select sum(doubleProperties.revenue) as \" \" FROM usersession where continent=\"North America\" and useraction.name=\"${kuaLastStep}\" and stringProperties.web_utm_source IS NOT NULL",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -396,7 +396,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select sum(doubleProperties.revenue) as \" \" FROM usersession where continent=\"South America\" and useraction.name=\"/easytravel/rest/validate-creditcard\" and stringProperties.web_utm_source IS NOT NULL",
+        "query": "select sum(doubleProperties.revenue) as \" \" FROM usersession where continent=\"South America\" and useraction.name=\"${kuaLastStep}\" and stringProperties.web_utm_source IS NOT NULL",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
