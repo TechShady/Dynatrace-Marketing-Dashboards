@@ -36,7 +36,7 @@
                 "legendShown": true,
                 "type": "TOP_LIST",
                 "series": [{
-                    "metric": "${CampaignD1.id}",
+                    "metric": "calc:apps.web.www.angular.easytravel.com.campaignsinasia",
                     "aggregation": "COUNT",
                     "type": "LINE",
                     "entityType": "APPLICATION",
