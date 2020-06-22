@@ -292,7 +292,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select sum(doubleProperties.revenue) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\" and stringProperties.${uspCampaign.name} IS NOT NULL ${regionClause.1}",
+        "query": "select sum(doubleProperties.revenue) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\" and stringProperties.${uspCampaign.name} IS NOT NULL ${regionClause1}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -308,7 +308,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select sum(doubleProperties.revenue) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\" and stringProperties.${uspCampaign.name} IS NOT NULL ${regionClause.2}",
+        "query": "select sum(doubleProperties.revenue) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\" and stringProperties.${uspCampaign.name} IS NOT NULL ${regionClause2}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -324,7 +324,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select sum(doubleProperties.revenue) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\" and stringProperties.${uspCampaign.name} IS NOT NULL ${regionClause.3}",
+        "query": "select sum(doubleProperties.revenue) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\" and stringProperties.${uspCampaign.name} IS NOT NULL ${regionClause3}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -340,7 +340,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select sum(doubleProperties.revenue) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\" and stringProperties.${uspCampaign.name} IS NOT NULL ${regionClause.4}",
+        "query": "select sum(doubleProperties.revenue) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\" and stringProperties.${uspCampaign.name} IS NOT NULL ${regionClause4}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
