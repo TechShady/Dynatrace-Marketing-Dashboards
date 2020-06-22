@@ -110,7 +110,7 @@
             "filtersPerEntityType": {}
         }
     }, {
-        "name": "Campaign Responses",
+        "name": "Responses",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
@@ -372,11 +372,11 @@
         },
         "tileFilter": {}
     }, {
-        "name": "Campaign Responses vs Revenue Over Time",
+        "name": "Responses vs Revenue Over Time",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
-            "top": 304,
+            "top": 456,
             "left": 0,
             "width": 570,
             "height": 38

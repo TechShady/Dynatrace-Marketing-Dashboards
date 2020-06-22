@@ -227,11 +227,11 @@
         "bounds": {
             "top": 418,
             "left": 0,
-            "width": 380,
+            "width": 456,
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## Campaign Responses vs Revenue Over Time"
+        "markdown": "## Responses vs Revenue Over Time"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -243,7 +243,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## ${MyGEOName1} Campaign Responses"
+        "markdown": "## ${MyGEOName1} Responses"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -255,7 +255,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## ${MyGEOName4} Campaign Responses"
+        "markdown": "## ${MyGEOName4} Responses"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -267,7 +267,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## ${MyGEOName2} Campaign Responses"
+        "markdown": "## ${MyGEOName2} Responses"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -279,7 +279,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## ${MyGEOName3} Campaign Responses"
+        "markdown": "## ${MyGEOName3} Responses"
     }, {
         "name": "User Sessions Query",
         "tileType": "DTAQL",
