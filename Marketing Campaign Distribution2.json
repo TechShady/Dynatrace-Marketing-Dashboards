@@ -287,7 +287,7 @@
         "bounds": {
             "top": 304,
             "left": 0,
-            "width": 342,
+            "width": 380,
             "height": 114
         },
         "tileFilter": {},
@@ -303,7 +303,7 @@
         "bounds": {
             "top": 304,
             "left": 380,
-            "width": 342,
+            "width": 380,
             "height": 114
         },
         "tileFilter": {},
@@ -319,7 +319,7 @@
         "bounds": {
             "top": 304,
             "left": 760,
-            "width": 342,
+            "width": 380,
             "height": 114
         },
         "tileFilter": {},
@@ -335,7 +335,7 @@
         "bounds": {
             "top": 304,
             "left": 1140,
-            "width": 342,
+            "width": 380,
             "height": 114
         },
         "tileFilter": {},
