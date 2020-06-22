@@ -42,7 +42,7 @@
                     "entityType": "APPLICATION",
                     "dimensions": [{
                         "id": "1",
-                        "name": "web_utm_campaign",
+                        "name": "${uspCampaign.name}",
                         "values": [],
                         "entityDimension": false
                     }],
@@ -51,7 +51,6 @@
                     "sortColumn": true
                 }],
                 "resultMetadata": {}
-                }
             },
             "filtersPerEntityType": {}
         }
@@ -80,7 +79,7 @@
                     "entityType": "APPLICATION",
                     "dimensions": [{
                         "id": "1",
-                        "name": "web_utm_campaign",
+                        "name": "${uspCampaign.name}",
                         "values": [],
                         "entityDimension": false
                     }],
@@ -117,7 +116,7 @@
                     "entityType": "APPLICATION",
                     "dimensions": [{
                         "id": "1",
-                        "name": "web_utm_campaign",
+                        "name": "${uspCampaign.name}",
                         "values": [],
                         "entityDimension": false
                     }],
@@ -154,7 +153,7 @@
                     "entityType": "APPLICATION",
                     "dimensions": [{
                         "id": "1",
-                        "name": "web_utm_campaign",
+                        "name": "${uspCampaign.name}",
                         "values": [],
                         "entityDimension": false
                     }],
@@ -293,7 +292,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select sum(doubleProperties.revenue) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\" and stringProperties.${uspCampaign.name} IS NOT NULL ${regionClause1}",
+        "query": "select sum(${uspRevenue.id}) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\" and stringProperties.${uspCampaign.name} IS NOT NULL ${regionClause1}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -309,7 +308,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select sum(doubleProperties.revenue) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\" and stringProperties.${uspCampaign.name} IS NOT NULL ${regionClause2}",
+        "query": "select sum(${uspRevenue.id}) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\" and stringProperties.${uspCampaign.name} IS NOT NULL ${regionClause2}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -325,7 +324,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select sum(doubleProperties.revenue) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\" and stringProperties.${uspCampaign.name} IS NOT NULL ${regionClause3}",
+        "query": "select sum(${uspRevenue.id}) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\" and stringProperties.${uspCampaign.name} IS NOT NULL ${regionClause3}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -341,7 +340,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select sum(doubleProperties.revenue) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\" and stringProperties.${uspCampaign.name} IS NOT NULL ${regionClause4}",
+        "query": "select sum(${uspRevenue.id}) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\" and stringProperties.${uspCampaign.name} IS NOT NULL ${regionClause4}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
