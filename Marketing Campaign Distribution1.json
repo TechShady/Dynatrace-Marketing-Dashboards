@@ -243,7 +243,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## ${MyGEOName1} Campaigns"
+        "markdown": "## ${MyGEOName1} Campaign Responses"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -255,7 +255,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## ${MyGEOName4} Campaigns"
+        "markdown": "## ${MyGEOName4} Campaign Responses"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -267,7 +267,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## ${MyGEOName2} Campaigns"
+        "markdown": "## ${MyGEOName2} Campaign Responses"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -279,7 +279,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## ${MyGEOName3} Campaigns"
+        "markdown": "## ${MyGEOName3} Campaign Responses"
     }, {
         "name": "User Sessions Query",
         "tileType": "DTAQL",
