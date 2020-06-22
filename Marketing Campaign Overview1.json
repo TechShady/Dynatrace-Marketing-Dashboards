@@ -63,6 +63,7 @@
                     "null${Revenue.id}|SUM|TOTAL|LINE|APPLICATION|APPLICATION": {
                         "lastModified": 1591285527997,
                         "customColor": "#39ff14"
+						}
 					},
                 "axisLimits": {
                     "LEFT_MIN": 0.0
