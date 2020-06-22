@@ -231,7 +231,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## Campaigns Over Time"
+        "markdown": "## Campaign Responses vs Revenue Over Time"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -340,7 +340,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select sum(doubleProperties.revenue) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\" and stringProperties.${uspCampaign.name} IS NOT NULL ${regionClause4}",
+        "query": "select sum(doubleProperties.revenue) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\" and stringProperties.${uspCampaign.name} IS NOT NULL ${regionClause	4}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
