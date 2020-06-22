@@ -253,6 +253,6 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Explore Failed Journeys](${MyTenant}/ui/user-sessions/query?l=&sessionquery=select%20userid%20as%20%22User%22,%20stringProperties.bookingmessage%20as%20%22Error%20Message%22%20from%20usersession%20where%20continent%3D%22Asia%22%20and%20stringProperties.bookingmessage%20IS%20NOT%20NULL%20and%20stringProperties.bookingmessage%20%3C%3E%22Your%20journey%20was%20booked%20successfully!%20Open%20the%20summary%20and%20print%20out%20the%20ticket%27s.%22&gf=all&gtf=today)"
+        "markdown": "## [Explore Failed Journeys](${url}/ui/user-sessions/query?l=&sessionquery=select%20userid%20as%20%22User%22,%20stringProperties.bookingmessage%20as%20%22Error%20Message%22%20from%20usersession%20where%20continent%3D%22Asia%22%20and%20stringProperties.bookingmessage%20IS%20NOT%20NULL%20and%20stringProperties.bookingmessage%20%3C%3E%22Your%20journey%20was%20booked%20successfully!%20Open%20the%20summary%20and%20print%20out%20the%20ticket%27s.%22&gf=all&gtf=today)"
     }]
 }
