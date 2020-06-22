@@ -36,7 +36,7 @@
                 "legendShown": true,
                 "type": "TOP_LIST",
                 "series": [{
-                    "metric": "calc:apps.web.www.angular.easytravel.com.campaignsinasia",
+                    "metric": "${metricGEO1.id}",
                     "aggregation": "COUNT",
                     "type": "LINE",
                     "entityType": "APPLICATION",
@@ -50,15 +50,7 @@
                     "aggregationRate": "TOTAL",
                     "sortColumn": true
                 }],
-                "resultMetadata": {
-                    "null¦web_utm_campaign»spring_sale»falsecalc:apps.web.www.angular.easytravel.com.campaignsinasia|COUNT|TOTAL|LINE|APPLICATION": {
-                        "lastModified": 1591289685862,
-                        "customColor": "#1d1cff"
-                    },
-                    "null¦web_utm_campaign»special_offers»falsecalc:apps.web.www.angular.easytravel.com.campaignsinasia|COUNT|TOTAL|LINE|APPLICATION": {
-                        "lastModified": 1591289698607,
-                        "customColor": "#F001FF"
-                    }
+                "resultMetadata": {}
                 }
             },
             "filtersPerEntityType": {}
@@ -82,7 +74,7 @@
                 "legendShown": true,
                 "type": "TOP_LIST",
                 "series": [{
-                    "metric": "calc:apps.web.www.angular.easytravel.com.campaignsineurope",
+                    "metric": "${metricGEO2.id}",
                     "aggregation": "COUNT",
                     "type": "LINE",
                     "entityType": "APPLICATION",
@@ -96,16 +88,7 @@
                     "aggregationRate": "TOTAL",
                     "sortColumn": true
                 }],
-                "resultMetadata": {
-                    "null¦web_utm_campaign»special_offers»falsecalc:apps.web.www.angular.easytravel.com.campaignsineurope|COUNT|TOTAL|LINE|APPLICATION": {
-                        "lastModified": 1591289698607,
-                        "customColor": "#F001FF"
-                    },
-                    "null¦web_utm_campaign»spring_sale»falsecalc:apps.web.www.angular.easytravel.com.campaignsineurope|COUNT|TOTAL|LINE|APPLICATION": {
-                        "lastModified": 1591289685862,
-                        "customColor": "#1d1cff"
-                    }
-                }
+                "resultMetadata": {}
             },
             "filtersPerEntityType": {}
         }
@@ -128,7 +111,7 @@
                 "legendShown": true,
                 "type": "TOP_LIST",
                 "series": [{
-                    "metric": "calc:apps.web.www.angular.easytravel.com.campaignsinnorthamerica",
+                    "metric": "${metricGEO3.id}",
                     "aggregation": "COUNT",
                     "type": "LINE",
                     "entityType": "APPLICATION",
@@ -142,16 +125,7 @@
                     "aggregationRate": "TOTAL",
                     "sortColumn": true
                 }],
-                "resultMetadata": {
-                    "null¦web_utm_campaign»special_offers»falsecalc:apps.web.www.angular.easytravel.com.campaignsinnorthamerica|COUNT|TOTAL|LINE|APPLICATION": {
-                        "lastModified": 1591289698607,
-                        "customColor": "#F001FF"
-                    },
-                    "null¦web_utm_campaign»spring_sale»falsecalc:apps.web.www.angular.easytravel.com.campaignsinnorthamerica|COUNT|TOTAL|LINE|APPLICATION": {
-                        "lastModified": 1591289685862,
-                        "customColor": "#1d1cff"
-                    }
-                }
+                "resultMetadata": {}
             },
             "filtersPerEntityType": {}
         }
@@ -174,7 +148,7 @@
                 "legendShown": true,
                 "type": "TOP_LIST",
                 "series": [{
-                    "metric": "calc:apps.web.www.angular.easytravel.com.campaignsinsouthamerica",
+                    "metric": "${metricGEO4.id}",
                     "aggregation": "COUNT",
                     "type": "LINE",
                     "entityType": "APPLICATION",
@@ -188,16 +162,7 @@
                     "aggregationRate": "TOTAL",
                     "sortColumn": true
                 }],
-                "resultMetadata": {
-                    "null¦web_utm_campaign»special_offers»falsecalc:apps.web.www.angular.easytravel.com.campaignsinsouthamerica|COUNT|TOTAL|LINE|APPLICATION": {
-                        "lastModified": 1591289698607,
-                        "customColor": "#F001FF"
-                    },
-                    "null¦web_utm_campaign»spring_sale»falsecalc:apps.web.www.angular.easytravel.com.campaignsinsouthamerica|COUNT|TOTAL|LINE|APPLICATION": {
-                        "lastModified": 1591289685862,
-                        "customColor": "#1d1cff"
-                    }
-                }
+                "resultMetadata": {}
             },
             "filtersPerEntityType": {}
         }
@@ -247,14 +212,6 @@
                     "null${Revenue.id}|SUM|TOTAL|LINE|APPLICATION|APPLICATION": {
                         "lastModified": 1591285527997,
                         "customColor": "#39ff14"
-                    },
-                    "null¦${uspCampaign.name}»special_offer»false${Campaign.id}|COUNT|TOTAL|BAR|APPLICATION|APPLICATION¿¿¿${uspCampaign.name}ɵfalse": {
-                        "lastModified": 1591285491053,
-                        "customColor": "#F001FF"
-                    },
-                    "null¦${uspCampaign.name}»spring_sale»false${Campaign.id}|COUNT|TOTAL|BAR|APPLICATION|APPLICATION¿¿¿${uspCampaign.name}ɵfalse": {
-                        "lastModified": 1591285481963,
-                        "customColor": "#1D1CFF"
                     }
 					},
                 "axisLimits": {
@@ -275,7 +232,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## Campaigns Over Time"
+        "markdown": "## Campaign Responses Over Time"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -287,7 +244,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## Asia Campaigns"
+        "markdown": "## ${MyGEOName1} Campaigns"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -299,7 +256,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## South America Campaigns"
+        "markdown": "## ${MyGEOName4} Campaigns"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -311,7 +268,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## Europe Campaigns"
+        "markdown": "## ${MyGEOName2} Campaigns"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -323,7 +280,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## North America Campaigns"
+        "markdown": "## ${MyGEOName3} Campaigns"
     }, {
         "name": "User Sessions Query",
         "tileType": "DTAQL",
@@ -336,7 +293,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select sum(doubleProperties.revenue) as \" \" FROM usersession where continent=\"Asia\" and useraction.name=\"${kuaLastStep}\" and stringProperties.web_utm_source IS NOT NULL",
+        "query": "select sum(doubleProperties.revenue) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\" and stringProperties.${uspCampaign.name} IS NOT NULL ${regionClause1}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -352,7 +309,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select sum(doubleProperties.revenue) as \" \" FROM usersession where continent=\"Europe\" and useraction.name=\"${kuaLastStep}\" and stringProperties.web_utm_source IS NOT NULL",
+        "query": "select sum(doubleProperties.revenue) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\" and stringProperties.${uspCampaign.name} IS NOT NULL ${regionClause2}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -368,7 +325,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select sum(doubleProperties.revenue) as \" \" FROM usersession where continent=\"North America\" and useraction.name=\"${kuaLastStep}\" and stringProperties.web_utm_source IS NOT NULL",
+        "query": "select sum(doubleProperties.revenue) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\" and stringProperties.${uspCampaign.name} IS NOT NULL ${regionClause3}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -384,7 +341,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select sum(doubleProperties.revenue) as \" \" FROM usersession where continent=\"South America\" and useraction.name=\"${kuaLastStep}\" and stringProperties.web_utm_source IS NOT NULL",
+        "query": "select sum(doubleProperties.revenue) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\" and stringProperties.${uspCampaign.name} IS NOT NULL ${regionClause4}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -411,7 +368,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [S.America](#dashboard;id=77c80ead-b12a-4a7c-ac65-7433b8664f0a)"
+        "markdown": "## [${MyGEOName4}](#dashboard;id=77c80ead-b12a-4a7c-ac65-7433b8664f0a)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -423,7 +380,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Europe](#dashboard;id=77c80ead-b12a-4a7c-ac65-7433b8664f08)"
+        "markdown": "## [${MyGEOName2}](#dashboard;id=77c80ead-b12a-4a7c-ac65-7433b8664f08)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -435,7 +392,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [N.America](#dashboard;id=77c80ead-b12a-4a7c-ac65-7433b8664f09)"
+        "markdown": "## [${MyGEOName3}](#dashboard;id=77c80ead-b12a-4a7c-ac65-7433b8664f09)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -447,9 +404,9 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Asia](#dashboard;id=77c80ead-b12a-4a7c-ac65-7433b8664f07)"
+        "markdown": "## [${MyGEOName1}](#dashboard;id=77c80ead-b12a-4a7c-ac65-7433b8664f07)"
     }, {
-        "name": "Asia Revenue",
+        "name": "${MyGEOName1} Revenue",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
@@ -460,7 +417,7 @@
         },
         "tileFilter": {}
     }, {
-        "name": "Europe Revenue",
+        "name": "${MyGEOName2} Revenue",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
@@ -471,7 +428,7 @@
         },
         "tileFilter": {}
     }, {
-        "name": "North America Revenue",
+        "name": "${MyGEOName3} Revenue",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
@@ -482,7 +439,7 @@
         },
         "tileFilter": {}
     }, {
-        "name": "South America Revenue",
+        "name": "${MyGEOName4} Revenue",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
