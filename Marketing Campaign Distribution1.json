@@ -211,6 +211,14 @@
                     "null${Revenue.id}|SUM|TOTAL|LINE|APPLICATION|APPLICATION": {
                         "lastModified": 1591285527997,
                         "customColor": "#39ff14"
+                    },
+                    "null¦${uspCampaign.name}»special_offer»false${Campaign.id}|COUNT|TOTAL|BAR|APPLICATION|APPLICATION¿¿¿${uspCampaign.name}ɵfalse": {
+                        "lastModified": 1591285491053,
+                        "customColor": "#F001FF"
+                    },
+                    "null¦${uspCampaign.name}»spring_sale»false${Campaign.id}|COUNT|TOTAL|BAR|APPLICATION|APPLICATION¿¿¿${uspCampaign.name}ɵfalse": {
+                        "lastModified": 1591285481963,
+                        "customColor": "#1D1CFF"
                     }
 					},
                 "axisLimits": {
