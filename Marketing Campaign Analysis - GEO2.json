@@ -277,7 +277,7 @@
             "height": 38
         },
         "tileFilter": {},
- 		"markdown": "## [Explore Failed Journeys](${url}/ui/user-sessions/query?l=&sessionquery=select%20userid%20as%20"User",%20usersession.stringProperties.bookingmessage%20as%20"Error%20Message",%20usersession.doubleProperties.revenue%20as%20"Booking%20Amount"%20from%20usersession%20where%20usersession.stringProperties.bookingmessage%20IS%20NOT%20NULL%20and%20usersession.stringProperties.bookingmessage%20<>"Your%20journey%20was%20booked%20successfully!%20Open%20the%20summary%20and%20print%20out%20the%20ticket%27s."%20%20AND%20(usersession.continent%3D"Asia")&gf=all&gtf=today"
+ 		"markdown": "## [Explore Failed Journeys](${url}/ui/user-sessions/query?l=&sessionquery=select%20userid%20as%20%22User%22%20from%20usersession%20where%20useraction.name%3D%22${kuaLastStep}%22%20and%20${uspMessage.key}%20%3D%22${uspMessage.value}%22%20${regionClause1}&gf=all&gtf=today"
     }
 	]
 }
