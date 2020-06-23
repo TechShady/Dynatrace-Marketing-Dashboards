@@ -265,7 +265,7 @@
             "height": 38
         },
         "tileFilter": {},
-		"markdown": "## [Explore Abandoned Journeys](${url}/ui/user-sessions/query?l=&sessionquery=select%20userid%20as%20%22User%22%20from%20usersession%20where%20not%20useraction.name%3D%22${kuaLastStep}%22%20${regionClause1}&gf=all&gtf=today)"
+		"markdown": "## [Explore Abandoned Journeys](${url}/ui/user-sessions/query?l=&sessionquery=select%20userid%20as%20%22User%22%20from%20usersession%20where%20useraction.application=%22${app}%22%20not%20useraction.name%3D%22${kuaLastStep}%22%20${regionClause1}&gf=all&gtf=today)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
