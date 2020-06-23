@@ -241,7 +241,7 @@
             "height": 38
         },
         "tileFilter": {},
-        "markdown": "## [Explore User Journeys](#dashboard;id=bbbbbbbb-0007-0001-0009-000000000036)"
+		"markdown": "## [Explore Converted Journeys](${url}/ui/user-sessions/query?l=&sessionquery=select%20userid%20as%20%22User%22%20from%20usersession%20where%20useraction.name%3D%22${kuaLastStep}%22%20and%20${uspMessage.key}%20%3D%22${uspMessage.value}%22%20${regionClause1}&gf=all&gtf=today)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
@@ -253,25 +253,13 @@
             "height": 38
         },
         "tileFilter": {},
-		"markdown": "## [Explore Converted Journeys](${url}/ui/user-sessions/query?l=&sessionquery=select%20userid%20as%20%22User%22%20from%20usersession%20where%20useraction.name%3D%22${kuaLastStep}%22%20and%20${uspMessage.key}%20%3D%22${uspMessage.value}%22%20${regionClause1}&gf=all&gtf=today)"
-    }, {
-        "name": "Markdown",
-        "tileType": "MARKDOWN",
-        "configured": true,
-        "bounds": {
-            "top": 228,
-            "left": 1368,
-            "width": 304,
-            "height": 38
-        },
-        "tileFilter": {},
 		"markdown": "## [Explore Abandoned Journeys](${url}/ui/user-sessions/query?l=&sessionquery=select%20userid%20as%20%22User%22%20from%20usersession%20where%20useraction.application=%22${app.name}%22%20and%20not%20useraction.name%3D%22${kuaLastStep}%22%20${regionClause1}&gf=all&gtf=today)"
     }, {
         "name": "Markdown",
         "tileType": "MARKDOWN",
         "configured": true,
         "bounds": {
-            "top": 304,
+            "top": 228,
             "left": 1368,
             "width": 304,
             "height": 38
