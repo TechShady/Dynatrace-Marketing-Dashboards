@@ -4,7 +4,7 @@
 
 # Prereqs
 
-1. Create a session property for your campaign (i.e. Web property pack - web_utm_campaign query string)
+1. Create a session property for your campaign (i.e. Web property pack - web\_utm\_campaign query string)
 2. Create a session property for revenue (i.e. revenue - CSS selector)
 3. Create a session property for a sucessful conversion (i.e. "Order porcessed." - CSS selector)
 4. Create a metric for the campaign session property
