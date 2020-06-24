@@ -4,5 +4,10 @@
 
 # Prereqs
 
-1. Create session properties and metrics for campaign, source and revenue
-2. Mark the last user action step as a key user action for the user journey
+1. Create a session property for your campaign (i.e. Web property pack - web_utm_campaign query string)
+2. Create a session property for revenue (i.e. revenue - CSS selector)
+3. Create a session property for a sucessful conversion (i.e. "Order porcessed." - CSS selector)
+4. Create a metric for the campaign session property
+5. Create a metric for the revenue session property
+6. Create 4 additional metrics for each GEO location (i.e. Asia, Europe, Virginia, California)
+7. Mark the last user action step as a key user action for the user journey
