@@ -1,0 +1,404 @@
+{
+    "metadata": {
+        "configurationVersions": [3],
+        "clusterVersion": "1.192.87.20200501-000127"
+    },
+    "id": "934e67dd-9d84-4f57-a219-6a0d8f7ca2af",
+    "dashboardMetadata": {
+        "name": "${overviewName} Marketing Campaign Overview - Distribution",
+        "shared": true,
+        "owner": "john.kelly@dynatrace.com",
+        "sharingDetails": {
+            "linkShared": true,
+            "published": true
+        },
+        "dashboardFilter": {
+            "timeframe": "Today"
+        },
+        "tags": ["V6", "Overview", "Marketing"]
+    },
+    "tiles": [{
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 0,
+            "width": 380,
+            "height": 228
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": " ",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "${metricGEO1.id}",
+                    "aggregation": "COUNT",
+                    "type": "LINE",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "1",
+                        "name": "${uspCampaign.name}",
+                        "values": [],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "aggregationRate": "TOTAL",
+                    "sortColumn": true
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 418,
+            "width": 380,
+            "height": 228
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": " ",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "${metricGEO2.id}",
+                    "aggregation": "COUNT",
+                    "type": "LINE",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "1",
+                        "name": "${uspCampaign.name}",
+                        "values": [],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "aggregationRate": "TOTAL",
+                    "sortColumn": true
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 836,
+            "width": 380,
+            "height": 228
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": " ",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "${metricGEO3.id}",
+                    "aggregation": "COUNT",
+                    "type": "LINE",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "1",
+                        "name": "${uspCampaign.name}",
+                        "values": [],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "aggregationRate": "TOTAL",
+                    "sortColumn": true
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1254,
+            "width": 380,
+            "height": 228
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": " ",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "${metricGEO4.id}",
+                    "aggregation": "COUNT",
+                    "type": "LINE",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "1",
+                        "name": "${uspCampaign.name}",
+                        "values": [],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "aggregationRate": "TOTAL",
+                    "sortColumn": true
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 456,
+            "left": 0,
+            "width": 1634,
+            "height": 342
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": " ",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "${Campaign.id}",
+                    "aggregation": "COUNT",
+                    "type": "BAR",
+                    "entityType": "APPLICATION",
+                    "dimensions": [{
+                        "id": "1",
+                        "name": "${uspCampaign.name}",
+                        "values": [],
+                        "entityDimension": false
+                    }],
+                    "sortAscending": false,
+                    "aggregationRate": "TOTAL",
+                    "sortColumn": true
+                }, {
+                    "metric": "${Revenue.id}",
+                    "aggregation": "SUM",
+                    "type": "LINE",
+                    "entityType": "APPLICATION",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "aggregationRate": "TOTAL",
+                    "sortColumn": false
+                }],
+                "resultMetadata": {
+                    "null${Revenue.id}|SUM|TOTAL|LINE|APPLICATION|APPLICATION": {
+                        "lastModified": 1591285527997,
+                        "customColor": "#39ff14"
+                    }
+					},
+                "axisLimits": {
+                    "LEFT_MIN": 0.0
+                },
+                "leftAxisCustomUnit": "Count"
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 418,
+            "left": 0,
+            "width": 456,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## Responses vs Revenue Over Time"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 0,
+            "width": 380,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## ${MyGEOName1} Responses"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1254,
+            "width": 266,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## ${MyGEOName4} Responses"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 418,
+            "width": 380,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## ${MyGEOName2} Responses"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 836,
+            "width": 380,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## ${MyGEOName3} Responses"
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 304,
+            "left": 0,
+            "width": 380,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select sum(${uspRevenue.id}) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\" and stringProperties.${uspCampaign.name} IS NOT NULL ${regionClause1}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 304,
+            "left": 418,
+            "width": 380,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select sum(${uspRevenue.id}) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\" and stringProperties.${uspCampaign.name} IS NOT NULL ${regionClause2}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 304,
+            "left": 836,
+            "width": 380,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select sum(${uspRevenue.id}) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\" and stringProperties.${uspCampaign.name} IS NOT NULL ${regionClause3}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 304,
+            "left": 1254,
+            "width": 380,
+            "height": 114
+        },
+        "tileFilter": {},
+        "customName": " ",
+        "query": "select sum(${uspRevenue.id}) as \" \" FROM usersession where useraction.name=\"${kuaLastStep}\" and stringProperties.${uspCampaign.name} IS NOT NULL ${regionClause4}",
+        "type": "SINGLE_VALUE",
+        "timeFrameShift": "dynamic",
+        "limit": 50
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1558,
+            "width": 114,
+            "height": 38
+        },
+        "tileFilter": {},
+        "markdown": "## [Links ▲](#dashboard;id=389cb9ff-8300-4301-b45f-38866dc65683)"
+    }, {
+        "name": "${MyGEOName1} Revenue",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 266,
+            "left": 0,
+            "width": 380,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "${MyGEOName2} Revenue",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 266,
+            "left": 418,
+            "width": 380,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "${MyGEOName3} Revenue",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 266,
+            "left": 836,
+            "width": 380,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "${MyGEOName4} Revenue",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 266,
+            "left": 1254,
+            "width": 380,
+            "height": 38
+        },
+        "tileFilter": {}
+    }]
+}
