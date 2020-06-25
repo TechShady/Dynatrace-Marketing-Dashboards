@@ -11,3 +11,15 @@
 5. Create a metric for the revenue session property (Metric Revenue no split)
 6. Create 4 additional metrics for each GEO location (Metric: Useraction Duration split by Campaign Filter by continent, region, etc)
 7. Mark the last user action step as a key user action for the user journey
+
+# Create Metric for Campaigns
+
+![Marketing Campaign Overview](image/MCOCampaigns.png)
+
+# Create Metric for Revenue
+
+![Marketing Campaign Overview](image/MCORevenue.png)
+
+# Create Metric for Campaign by GEO
+
+![Marketing Campaign Overview](image/MCOCampaignsByGEO.png)
