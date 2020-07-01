@@ -4,7 +4,7 @@
 
 # Prereqs
 
-Step by step video on how to prep your Dynatrace tenant: https://www.youtube.com/watch?v=VFRN0fexMbY
+Step by step ![video](https://www.youtube.com/watch?v=VFRN0fexMbY) on how to prep your Dynatrace tenant.
 
 1. Create a session property for your campaign (i.e. Web property pack - web\_utm\_campaign query string)
 2. Create a session property for revenue (i.e. revenue - CSS selector)
