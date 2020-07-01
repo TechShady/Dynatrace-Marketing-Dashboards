@@ -2,9 +2,11 @@
 
 ![Marketing Campaign Overview](image/MCO.png)
 
-# Prereqs
+[Step by step video guide for preparing your Dynatrace tenant](https://www.youtube.com/watch?v=VFRN0fexMbY "Prereq Video")
+[How to deploy video]()
+[How to use video]()
 
-[Step by step video guide](https://www.youtube.com/watch?v=VFRN0fexMbY "Prereq Video")
+# Prereqs highlights
 
 1. Create a session property for your campaign (i.e. Web property pack - web\_utm\_campaign query string)
 2. Create a session property for revenue (i.e. revenue - CSS selector)
