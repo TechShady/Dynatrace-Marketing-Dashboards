@@ -4,7 +4,7 @@
 
 # Prereqs
 
-[Step by step video guide](https://www.youtube.com/watch?v=VFRN0fexMbY "video")
+[Step by step video guide](https://www.youtube.com/watch?v=VFRN0fexMbY "Prereq Video")
 
 1. Create a session property for your campaign (i.e. Web property pack - web\_utm\_campaign query string)
 2. Create a session property for revenue (i.e. revenue - CSS selector)
