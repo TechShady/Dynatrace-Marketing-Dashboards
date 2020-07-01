@@ -3,7 +3,9 @@
 ![Marketing Campaign Overview](image/MCO.png)
 
 [Step by step video guide for preparing your Dynatrace tenant](https://www.youtube.com/watch?v=VFRN0fexMbY "Prereq Video")
+
 [How to deploy video]()
+
 [How to use video]()
 
 # Prereqs highlights
