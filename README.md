@@ -1,5 +1,7 @@
 # Digital Business Analytics Marketing Campaign Dashboards
 
+This dashboard pack provides a detail overview for your marketing campaigns. You can see the responses broken down by campain, user experience for the campaigns and key KPI dat like revenue and conversion for the campaigns. Additional drilldowns show campaign performance and KPIs across configurable GEOs. You can also drill down to campaign user journeys, fauled campaign user journys and abandonded campaign user journeys.
+
 ![Marketing Campaign Overview](image/MCO.png)
 
 [Prerequisites Video](https://www.youtube.com/watch?v=VFRN0fexMbY "Prereq Video")
