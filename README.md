@@ -4,9 +4,9 @@
 
 [Prerequisites Video](https://www.youtube.com/watch?v=VFRN0fexMbY "Prereq Video")
 
-[Deployment Video]()
+[Deployment Video Coming Soon]()
 
-[Usage Video]()
+[Usage Video Coming Soon]()
 
 # Prerequisites Highlights
 
