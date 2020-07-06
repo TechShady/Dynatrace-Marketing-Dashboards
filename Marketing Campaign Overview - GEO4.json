@@ -46,7 +46,7 @@
                     "sortColumn": true
                 }, {
                     "metric": "${metricGEO2.id}",
-                    "aggregation": "AVG",
+                    "aggregation": "COUNT",
                     "type": "BAR",
                     "entityType": "APPLICATION",
                     "dimensions": [{
