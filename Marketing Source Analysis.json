@@ -5,7 +5,7 @@
     },
     "id": "7adf3b06-c272-4b27-a48c-31444692c466",
     "dashboardMetadata": {
-        "name": "${overviewName} Marketing Source Overview - ${uspSource.value}",
+        "name": "${overviewName} Marketing Source Analysis - ${uspSource.value}",
         "shared": false,
         "owner": "john.kelly@dynatrace.com",
         "sharingDetails": {
@@ -132,7 +132,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select sum(${uspRevenue.id}) as \" \" FROM usersession where stringProperties.${uspSource.key}=\"${uspSource.value}\" and not useraction.name=\"${kuaLastStep}\"",
+        "query": "select sum(${uspRevenue.id}) as \" \" FROM usersession where ${uspSource.key}=\"${uspSource.value}\" and not useraction.name=\"${kuaLastStep}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -148,7 +148,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select sum(${uspRevenue.id}) as \" \" FROM usersession where stringProperties.${uspSource.key}=\"${uspSource.value}\" and useraction.name=\"${kuaLastStep}\" and userExperienceScore is not \"SATISFIED\"",
+        "query": "select sum(${uspRevenue.id}) as \" \" FROM usersession where ${uspSource.key}=\"${uspSource.value}\" and useraction.name=\"${kuaLastStep}\" and userExperienceScore is not \"SATISFIED\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -164,7 +164,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select avg(${uspRevenue.id}) as \" \" FROM usersession where stringProperties.${uspSource.key}=\"${uspSource.value}\" and useraction.name=\"${kuaLastStep}\"",
+        "query": "select avg(${uspRevenue.id}) as \" \" FROM usersession where ${uspSource.key}=\"${uspSource.value}\" and useraction.name=\"${kuaLastStep}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -180,7 +180,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select count(*) as \" \" from usersession where stringProperties.${uspSource.key}=\"${uspSource.value}\" and useraction.name=\"${kuaLastStep}\"",
+        "query": "select count(*) as \" \" from usersession where ${uspSource.key}=\"${uspSource.value}\" and useraction.name=\"${kuaLastStep}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -196,7 +196,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select count(*) as \" \" from usersession where stringProperties.${uspSource.key}=\"${uspSource.value}\" and not useraction.name=\"${kuaLastStep}\"",
+        "query": "select count(*) as \" \" from usersession where ${uspSource.key}=\"${uspSource.value}\" and not useraction.name=\"${kuaLastStep}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -212,7 +212,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select sum(${uspRevenue.id}) as \" \" FROM usersession where stringProperties.${uspSource.key}=\"${uspSource.value}\" and useraction.name=\"${kuaLastStep}\"",
+        "query": "select sum(${uspRevenue.id}) as \" \" FROM usersession where ${uspSource.key}=\"${uspSource.value}\" and useraction.name=\"${kuaLastStep}\"",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
