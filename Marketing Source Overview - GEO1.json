@@ -106,7 +106,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select sum(${uspRevenue.id}) as \" \" from usersession where useraction.name=\"${kuaLastStep}\" and stringProperties.${uspSource.name} IS NOT NULL ${regionClause1}",
+        "query": "select sum(${uspRevenue.id}) as \" \" from usersession where useraction.name=\"${kuaLastStep}\" ${regionClause1}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -138,7 +138,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select sum(${uspRevenue.id}) as \" \" from usersession where not useraction.name=\"${kuaLastStep}\" and stringProperties.${uspSource.name} IS NOT NULL ${regionClause1}",
+        "query": "select sum(${uspRevenue.id}) as \" \" from usersession where not useraction.name=\"${kuaLastStep}\" ${regionClause1}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -154,7 +154,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select count(*) as \" \" from usersession where useraction.name=\"${kuaLastStep}\" and stringProperties.${uspSource.name} IS NOT NULL ${regionClause1}",
+        "query": "select count(*) as \" \" from usersession where useraction.name=\"${kuaLastStep}\" ${regionClause1}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
@@ -170,7 +170,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select count(*) as \" \" from usersession where not useraction.name=\"${kuaLastStep}\" and stringProperties.${uspSource.name} IS NOT NULL ${regionClause1}",
+        "query": "select count(*) as \" \" from usersession where not useraction.name=\"${kuaLastStep}\" ${regionClause1}",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
