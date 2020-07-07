@@ -28,7 +28,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "SELECT city, sum(${uspRevenue.id}) FROM usersession where ${uspRevenue.id}>0 and useraction.name=\"loading of page /datacapture2/success.aspx\" GROUP BY city",
+        "query": "SELECT city, sum(${uspRevenue.id}) FROM usersession where ${uspRevenue.id}>0 and useraction.name=\"${kuaLastStep}\" GROUP BY city",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -43,7 +43,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "SELECT city, count(*) FROM usersession where ${uspRevenue.id}>0 and useraction.name=\"loading of page /datacapture2/success.aspx\" GROUP BY city",
+        "query": "SELECT city, count(*) FROM usersession where ${uspRevenue.id}>0 and useraction.name=\"${kuaLastStep}\" GROUP BY city",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -58,7 +58,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "SELECT continent, sum(${uspRevenue.id}) FROM usersession where ${uspRevenue.id}>0 and useraction.name=\"loading of page /datacapture2/success.aspx\" GROUP BY continent",
+        "query": "SELECT continent, sum(${uspRevenue.id}) FROM usersession where ${uspRevenue.id}>0 and useraction.name=\"${kuaLastStep}\" GROUP BY continent",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -73,7 +73,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "SELECT continent, count(*) FROM usersession where ${uspRevenue.id}>0 and useraction.name=\"loading of page /datacapture2/success.aspx\" GROUP BY continent",
+        "query": "SELECT continent, count(*) FROM usersession where ${uspRevenue.id}>0 and useraction.name=\"${kuaLastStep}\" GROUP BY continent",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -88,7 +88,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "SELECT country, sum(${uspRevenue.id}) FROM usersession where ${uspRevenue.id}>0 and useraction.name=\"loading of page /datacapture2/success.aspx\" GROUP BY country",
+        "query": "SELECT country, sum(${uspRevenue.id}) FROM usersession where ${uspRevenue.id}>0 and useraction.name=\"${kuaLastStep}\" GROUP BY country",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -103,7 +103,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "SELECT country, count(*) FROM usersession where ${uspRevenue.id}>0 and useraction.name=\"loading of page /datacapture2/success.aspx\" GROUP BY country",
+        "query": "SELECT country, count(*) FROM usersession where ${uspRevenue.id}>0 and useraction.name=\"${kuaLastStep}\" GROUP BY country",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -118,7 +118,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "SELECT region, sum(${uspRevenue.id}) FROM usersession where ${uspRevenue.id}>0 and useraction.name=\"loading of page /datacapture2/success.aspx\" GROUP BY region",
+        "query": "SELECT region, sum(${uspRevenue.id}) FROM usersession where ${uspRevenue.id}>0 and useraction.name=\"${kuaLastStep}\" GROUP BY region",
         "type": "PIE_CHART",
         "limit": 50
     }, {
@@ -133,7 +133,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "SELECT region, count(*) FROM usersession where ${uspRevenue.id}>0 and useraction.name=\"loading of page /datacapture2/success.aspx\" GROUP BY region",
+        "query": "SELECT region, count(*) FROM usersession where ${uspRevenue.id}>0 and useraction.name=\"${kuaLastStep}\" GROUP BY region",
         "type": "PIE_CHART",
         "limit": 50
     }, {
