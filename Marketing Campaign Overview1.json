@@ -299,7 +299,7 @@
         },
         "tileFilter": {}
     }, {
-        "name": "Apdex",
+        "name": "Responses by Geo",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
