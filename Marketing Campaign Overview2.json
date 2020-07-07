@@ -364,6 +364,18 @@
             "height": 38
         },
         "tileFilter": {},
+        "markdown": "## [User Journey](#dashboard;id=${MyJourneyLink})"
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 152,
+            "left": 1520,
+            "width": 190,
+            "height": 38
+        },
+        "tileFilter": {},
         "markdown": "## [Revenue Analysis](#dashboard;id=ec219458-0442-4e65-9b7e-28321b1755bg)"
     }]
 }
