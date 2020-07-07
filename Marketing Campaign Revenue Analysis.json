@@ -35,13 +35,13 @@
                 "legendShown": true,
                 "type": "TOP_LIST",
                 "series": [{
-                    "metric": "${Source.id}",
+                    "metric": "${Campaign.id}",
                     "aggregation": "SUM",
                     "type": "LINE",
                     "entityType": "APPLICATION",
                     "dimensions": [{
                         "id": "1",
-                        "name": "${uspSource.name}",
+                        "name": "${uspCampaign.name}",
                         "values": [],
                         "entityDimension": false
                     }],
@@ -72,7 +72,7 @@
                 "legendShown": true,
                 "type": "TOP_LIST",
                 "series": [{
-                    "metric": "${Source.id}",
+                    "metric": "${Campaign.id}",
                     "aggregation": "SUM",
                     "type": "LINE",
                     "entityType": "APPLICATION",
