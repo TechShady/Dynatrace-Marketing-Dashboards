@@ -241,58 +241,29 @@
         "tileFilter": {},
         "filterConfig": {
             "type": "MIXED",
-            "customName": "User Action Apdex",
+            "customName": " ",
             "defaultName": "Custom chart",
             "chartConfig": {
                 "legendShown": true,
                 "type": "TOP_LIST",
                 "series": [{
-                    "metric": "builtin:apps.web.actionCount.category",
-                    "aggregation": "NONE",
+                    "metric": "${Campaign.id}",
+                    "aggregation": "COUNT",
                     "type": "LINE",
                     "entityType": "APPLICATION",
                     "dimensions": [{
-                        "id": "1",
-                        "name": "Apdex category",
-                        "values": ["FRUSTRATED", "SATISFIED", "TOLERATING"],
-                        "entityDimension": false
+                        "id": "2",
+                        "name": "dt.entity.geolocation",
+                        "values": [],
+                        "entityDimension": true
                     }],
                     "sortAscending": false,
-                    "aggregationRate": "TOTAL",
-                    "sortColumn": true
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
                 }],
-                "resultMetadata": {
-                    "${app.id}¦APPLICATION»${app.id}»true¦Apdex category»TOLERATING»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|LINE|APPLICATION": {
-                        "lastModified": 1591286574544,
-                        "customColor": "#ffe11c"
-                    },
-                    "null¦Apdex category»FRUSTRATED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|LINE|APPLICATION": {
-                        "lastModified": 1591286947851,
-                        "customColor": "#FF1C1C"
-                    },
-                    "null¦Apdex category»SATISFIED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|LINE|APPLICATION": {
-                        "lastModified": 1591286963890,
-                        "customColor": "#39ff14"
-                    },
-                    "null¦Apdex category»TOLERATING»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|LINE|APPLICATION": {
-                        "lastModified": 1591286955588,
-                        "customColor": "#ffe11c"
-                    },
-                    "${app.id}¦APPLICATION»${app.id}»true¦Apdex category»SATISFIED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|LINE|APPLICATION": {
-                        "lastModified": 1591286562245,
-                        "customColor": "#39ff14"
-                    },
-                    "${app.id}¦APPLICATION»${app.id}»true¦Apdex category»FRUSTRATED»falsebuiltin:apps.web.actionCount.category|NONE|TOTAL|LINE|APPLICATION": {
-                        "lastModified": 1591286585223,
-                        "customColor": "#FF1C1C"
-                    }
-                }
+                "resultMetadata": {}
             },
-            "filtersPerEntityType": {
-                "APPLICATION": {
-                    "SPECIFIC_ENTITIES": ["${app.id}"]
-                }
-            }
+            "filtersPerEntityType": {}
         }
     }, {
         "name": "Revenue",
