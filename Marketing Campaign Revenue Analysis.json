@@ -17,87 +17,13 @@
         }
     },
     "tiles": [{
-        "name": "",
-        "tileType": "CUSTOM_CHARTING",
-        "configured": true,
-        "bounds": {
-            "top": 38,
-            "left": 0,
-            "width": 798,
-            "height": 380
-        },
-        "tileFilter": {},
-        "filterConfig": {
-            "type": "MIXED",
-            "customName": " ",
-            "defaultName": "Custom chart",
-            "chartConfig": {
-                "legendShown": true,
-                "type": "TOP_LIST",
-                "series": [{
-                    "metric": "${Campaign.id}",
-                    "aggregation": "SUM",
-                    "type": "LINE",
-                    "entityType": "APPLICATION",
-                    "dimensions": [{
-                        "id": "1",
-                        "name": "${uspCampaign.name}",
-                        "values": [],
-                        "entityDimension": false
-                    }],
-                    "sortAscending": false,
-                    "sortColumn": true,
-                    "aggregationRate": "TOTAL"
-                }],
-                "resultMetadata": {}
-            },
-            "filtersPerEntityType": {}
-        }
-    }, {
-        "name": "",
-        "tileType": "CUSTOM_CHARTING",
-        "configured": true,
-        "bounds": {
-            "top": 38,
-            "left": 836,
-            "width": 798,
-            "height": 380
-        },
-        "tileFilter": {},
-        "filterConfig": {
-            "type": "MIXED",
-            "customName": " ",
-            "defaultName": "Custom chart",
-            "chartConfig": {
-                "legendShown": true,
-                "type": "TOP_LIST",
-                "series": [{
-                    "metric": "${Campaign.id}",
-                    "aggregation": "SUM",
-                    "type": "LINE",
-                    "entityType": "APPLICATION",
-                    "dimensions": [{
-                        "id": "2",
-                        "name": "dt.entity.geolocation",
-                        "values": [],
-                        "entityDimension": true
-                    }],
-                    "sortAscending": false,
-                    "sortColumn": true,
-                    "aggregationRate": "TOTAL"
-                }],
-                "resultMetadata": {}
-            },
-            "filtersPerEntityType": {}
-        }
-    }, {
         "name": "Custom chart",
         "tileType": "CUSTOM_CHARTING",
         "configured": true,
         "bounds": {
             "top": 456,
             "left": 0,
-            "width": 1634,
+            "width": 1672,
             "height": 342
         },
         "tileFilter": {},
@@ -150,15 +76,71 @@
         },
         "tileFilter": {}
     }, {
-        "name": "Revenue by Geo",
+        "name": "Lost Revenue by Campaign",
         "tileType": "HEADER",
         "configured": true,
         "bounds": {
             "top": 0,
-            "left": 836,
+            "left": 1140,
             "width": 304,
             "height": 38
         },
         "tileFilter": {}
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 0,
+            "width": 532,
+            "height": 380
+        },
+        "tileFilter": {},
+        "customName": "User sessions query results",
+        "query": "SELECT ${uspCampaign.id}, sum(${uspRevenue.id}) FROM usersession where ${uspCampaign.id} IS NOT NULL and useraction.name=\"${kuaLastStep}\" group by ${uspCampaign.id}",
+        "type": "PIE_CHART",
+        "limit": 50
+    }, {
+        "name": "Risk Revenue by Campaign",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 570,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 570,
+            "width": 532,
+            "height": 380
+        },
+        "tileFilter": {},
+        "customName": "User sessions query results",
+        "query": "SELECT ${uspCampaign.id}, sum(${uspRevenue.id}) FROM usersession where ${uspCampaign.id} IS NOT NULL and useraction.name=\"${kuaLastStep}\" and userExperienceScore <> \"SATISFIED\" group by ${uspCampaign.id}",
+        "type": "PIE_CHART",
+        "limit": 50
+    }, {
+        "name": "User Sessions Query",
+        "tileType": "DTAQL",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1140,
+            "width": 532,
+            "height": 380
+        },
+        "tileFilter": {},
+        "customName": "User sessions query results",
+        "query": "SELECT ${uspCampaign.id}, sum(${uspRevenue.id}) FROM usersession where ${uspCampaign.id} IS NOT NULL and not useraction.name=\"${kuaLastStep}\" group by ${uspCampaign.id}",
+        "type": "PIE_CHART",
+        "limit": 50
     }]
 }
