@@ -14,7 +14,8 @@
         },
         "dashboardFilter": {
             "timeframe": ""
-        }
+        },
+        "tags": ["V6", "Overview", "Marketing", "Revenue"]
     },
     "tiles": [{
         "name": "Custom chart",
