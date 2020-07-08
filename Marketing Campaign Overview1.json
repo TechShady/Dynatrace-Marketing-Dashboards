@@ -192,7 +192,7 @@
         },
         "tileFilter": {},
         "customName": " ",
-        "query": "select count(*) as \" \" from usersession where useraction.name=\"${kuaLastStep}\"",
+        "query": "select count(*) as \" \" from usersession where useraction.name=\"${kuaLastStep}\" and ${uspRevenue.id}>0",
         "type": "SINGLE_VALUE",
         "timeFrameShift": "dynamic",
         "limit": 50
