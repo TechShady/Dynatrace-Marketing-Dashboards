@@ -7,7 +7,7 @@ user journys and abandonded campaign user journeys.
 
 ![Marketing Campaign Overview](image/MCO.png)
 
-[Prerequisites Video](https://www.youtube.com/watch?v=VFRN0fexMbY "Prereq Video")
+[Prerequisites Video](https://youtu.be/TryamssXZKo "Prereq Video")
 
 [Deployment Video Coming Soon]()
 
