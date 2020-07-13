@@ -1,9 +1,8 @@
 # BizOps Marketing Campaign Overview Dashboards
 
 This dashboard pack provides a detail overview for your marketing campaigns. You can see the responses broken down by campain, <br>
-user experience for the campaigns and key KPI data like revenue and conversion for the campaigns. Additional drill downs show <br>
-campaign performance and KPIs across configurable GEOs. You can also drill down to campaign user journeys, fauled campaign <br>
-user journys and abandonded campaign user journeys.
+campaigns by GEO and key KPI data like revenue and conversion for the campaigns. Additional drill downs show campaign user journeys <br>
+and detailed analysis views. <br>
 
 ![Marketing Campaign Overview](image/MCO.png)
 
