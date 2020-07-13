@@ -1,4 +1,4 @@
-# Digital Business Analytics Marketing Campaign Dashboards
+# BizOps Marketing Source Analysis Dashboards
 
 This dashboard pack provides a detail overview for your marketing campaigns. You can see the responses broken down by campain, <br>
 user experience for the campaigns and key KPI data like revenue and conversion for the campaigns. Additional drill downs show <br>
